@@ -43,3 +43,12 @@ function AddToList(){
         console.log('Name is empty');
     }
 }
+
+function themeSwitch(theme){
+    document.getElementById("container").style.backgroundColor = `var(--container-bg-${theme})`;
+    document.body.style.backgroundColor = `var(--body-bg-${theme})`;
+    document.getElementById('logo').style.color = `var(--logo-color-${theme})`;
+    document.getElementById("enter-new-item").style.backgroundColor = `var(--element-bg-${theme})`;
+    document.getElementsByClassName('item').style.backgroundColor = `var(--element-bg-${theme})`;
+}
+themeSwitch("dark")
