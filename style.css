@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     :root{
         --container-width: 100vw;
 
@@ -17,27 +17,24 @@
     #add-new-item:hover, .item-delete:hover{
         transform: none!important;
     }
-    #header{
-        transform: scale(1.8)!important;
-    }
     #container{
-        margin-top: 20px!important;
+        margin: 0px!important;
         padding: 0px!important;
-        margin-left: 0px!important;
-        margin-right: 0px!important;
         border: none!important;
         box-shadow: none!important;
         border-radius: 0px!important;
     }
     #enter-new-item{
-        width: 92vw!important;
-
+        width: 90%!important;
+    }
+    #add-new-item{
+        margin-left: 5%!important; /*A half of the available*/
     }
     .item{
-        width: 92vw!important;
+        width: 90%!important;
     }
 }
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1201px) {
     :root{
         --container-width: 80vw;
 
@@ -63,31 +60,32 @@ body{
     font-family: sans-serif;
 }
 #header{
-    width: 30%;
-    height: 5%;
-    margin-bottom: 5%;
-    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-bottom: 2vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 #logo{
-    font-size: 3vw;
+    font-size: 5.4vh;
     font-weight: 800;
     letter-spacing: 1px;
-    line-height: 60px;
+    line-height: 7vh;
     color: var(--color-light);
 }
 #icon{
-    width: 7vw;
-    height: 7vw;
+    width: 15vh;
+    height: 15vh;
 }
 #container{
     background-color: var(--container-bg-light);
     box-shadow: 1px 1px 1px 1px rgb(150, 148, 148);
     width: var(--container-width);
     height: auto;
-    border-radius: 15px;
+    border-radius: 2vh;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -99,10 +97,11 @@ input{
     border: 0;
 }
 #enter-new-item{
-    width: 97%;
-    height: 5vh;
-    padding: 5px;
-    border-radius: 5px;
+    width: 95%;
+    height: 5.5vh;
+    font-size: 2vh;
+    padding: 10px;
+    border-radius: 1.8vh;
     box-shadow: 1px 1px 1px 1px rgb(128, 124, 124);
     background-color: var(--element-bg-light);
     margin-bottom: 7px;
@@ -112,28 +111,33 @@ input{
 }
 #add-new-item{
     background-color: var(--add-item-bg-light);
-    box-shadow: 1px 1px 1px 1px rgb(109, 107, 107);
+    box-shadow: 1px 1px 1px 1px rgb(46, 44, 121);
     color: aliceblue;
     font-weight: 500;
-    padding: 9px;
-    border-radius: 5px;
+    font-size: 2.1vh;
+    padding: 2vh;
+    border-radius: 1.8vh;
     margin-bottom: 25px;
-    margin-left: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 2.5%; /* Hell yeah code */ 
 }
 .item{
     background-color: var(--element-bg-light);
-    /* border: 1px solid rgb(114, 112, 112); */
     box-shadow: 1px 1px 1px 1px rgb(172, 171, 171);
-    width: 97%;
+    width: 95%;
     padding: 7px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 1.8vh;
+    margin-bottom: 1.5vh;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 .item-name{
-    margin-left: 10px;
+    font-size: 2.2vh;
+    height: 3vh;
+    margin-left: 1vh;
     text-align: left;
     width: 95%;
     font-weight: 600;
@@ -143,9 +147,9 @@ input{
     background-color: white;
     font-weight: 700;
     padding: 0;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
+    width: 5vh;
+    height: 5vh;
+    font-size: 3vh;
     position: relative;
     top: 0;
     bottom: 0;

@@ -51,4 +51,9 @@ function themeSwitch(theme){
     document.getElementById("enter-new-item").style.backgroundColor = `var(--element-bg-${theme})`;
     document.getElementsByClassName('item').style.backgroundColor = `var(--element-bg-${theme})`;
 }
-themeSwitch("dark")
+if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+    themeSwitch("dark");
+}
+else{
+    themeSwitch("light");
+}
