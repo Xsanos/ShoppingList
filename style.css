@@ -128,23 +128,23 @@ input{
 }
 #input-new-item{
     width: 95%;
-    height: 5.5vh;
+    height: 6vh;
     font-size: 2vh;
-    padding: 10px;
-    border-radius: 12px;
-    border: 1px solid rgb(83, 82, 82);
+    padding: 5px;
+    border-radius: 1.5vh;
+    /* border: 1px solid rgb(83, 82, 82); */
     margin-bottom: 7px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 #add-new-item{
-    border: 1px solid rgb(83, 82, 82);
+    /* border: 1px solid rgb(83, 82, 82); */
     color: aliceblue;
     font-weight: 500;
     font-size: 2.1vh;
     padding: 2vh;
-    border-radius: 12px;
+    border-radius: 1.5vh;
     margin-bottom: 25px;
     display: block;
     margin-left: auto;
@@ -152,10 +152,10 @@ input{
     margin-left: 1.5%; /* Hell yeah code */ 
 }
 .item{
-    border: 1px solid rgb(83, 82, 82);
+    /* border: 1px solid rgb(83, 82, 82); */
     width: 95%;
-    padding: 7px;
-    border-radius: 12px;
+    padding: 5px;
+    border-radius: 1.5vh;
     margin-bottom: 1.5vh;
     display: flex;
     margin-left: auto;
