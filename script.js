@@ -1,4 +1,4 @@
-const EnterName = document.getElementById('enter-new-item').addEventListener('keypress', function(event){
+const EnterName = document.getElementById('input-new-item').addEventListener('keypress', function(event){
     if (event.key === "Enter"){
         AddToList();
     }
@@ -15,7 +15,7 @@ function DeleteElement(ID){
 }
 
 function AddToList(){
-    const TypeItem = document.getElementById('enter-new-item');
+    const TypeItem = document.getElementById('input-new-item');
     // Trim checks if there are not only whitespaces
     if (TypeItem.value.trim()){
         const div = document.createElement('div');
@@ -42,18 +42,4 @@ function AddToList(){
     } else { 
         console.log('Name is empty');
     }
-}
-
-function themeSwitch(theme){
-    document.getElementById("container").style.backgroundColor = `var(--container-bg-${theme})`;
-    document.body.style.backgroundColor = `var(--body-bg-${theme})`;
-    document.getElementById('logo').style.color = `var(--logo-color-${theme})`;
-    document.getElementById("enter-new-item").style.backgroundColor = `var(--element-bg-${theme})`;
-    document.getElementsByClassName('item').style.backgroundColor = `var(--element-bg-${theme})`;
-}
-if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    themeSwitch("dark");
-}
-else{
-    themeSwitch("light");
 }

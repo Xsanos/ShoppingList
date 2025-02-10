@@ -1,7 +1,64 @@
+@media (prefers-color-scheme: light){
+    body{
+        background-color: var(--body-bg-light);
+    }
+    #container{
+        background-color: var(--container-bg-light);
+    }
+    #logo{
+        color: var(--logo-color-light);
+    }
+    #input-new-item{
+        box-shadow: var(--element-shadow-light);
+    }
+    #add-new-item{
+        background-color: var(--add-item-bg-light);
+        box-shadow: var(--element-shadow-light);
+    }
+    
+    .item{
+        background-color: var(--element-bg-light);
+        box-shadow: var(--element-shadow-light);
+    }
+}
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: var(--body-bg-dark);
+    }
+    #container{
+        background-color: var(--container-bg-dark);
+    }
+    #logo{
+        color: var(--logo-color-dark);
+    }
+    #input-new-item{
+        box-shadow: var(--element-shadow-dark);
+    }
+    #add-new-item{
+        background-color: var(--add-item-bg-dark);
+        box-shadow: var(--element-shadow-dark);
+    }
+    .item{
+        background-color: var(--element-bg-dark);
+        box-shadow: var(--element-shadow-dark);
+    }
+}
+
 @media screen and (max-width: 880px) {
     :root{
         --container-bg-light: rgba(255, 255, 255, 0);
+        --body-bg-light: rgb(255, 255, 255);
+        --element-bg-light: rgb(255, 255, 255);
+        --add-item-bg-light: rgb(79, 160, 79);
+        --logo-color-light: rgb(0, 0, 0);
+        --element-shadow-light: 1px 1px 1px 1px rgb(172, 169, 169);
+    
         --container-bg-dark: rgba(255, 255, 255, 0);
+        --body-bg-dark: rgb(114, 114, 114);
+        --element-bg-dark: rgb(255, 255, 255);
+        --add-item-bg-dark: rgb(88, 79, 168);
+        --logo-color-dark: rgb(255, 255, 255);
+        --element-shadow-dark: 1px 1px 1px 1px rgb(85, 80, 80);
     }
     #container{
         margin: 0!important;
@@ -13,25 +70,26 @@
         transform: none!important;
     }
 }
-
-:root{
-    font-size: 16px;
-    --container-bg-light: rgba(255, 255, 255, 0);
-    --body-bg-light: white;
-    --element-bg-light: white;
-    --add-item-bg-light: rgb(88, 79, 168);
-    --logo-color-light: rgb(0, 0, 0);
-
-    --container-bg-dark: rgb(77, 77, 77);
-    --body-bg-dark: rgb(165, 165, 165);
-    --element-bg-dark: white;
-    --add-item-bg-dark: rgb(88, 79, 168);
-    --logo-color-dark: rgb(255, 255, 255);
+@media screen and (min-width: 880px){
+    :root{
+        --container-bg-light: rgb(199, 197, 197);
+        --body-bg-light: rgb(255, 255, 255);
+        --element-bg-light: rgb(255, 255, 255);
+        --add-item-bg-light: rgb(79, 160, 79);
+        --logo-color-light: rgb(0, 0, 0);
+        --element-shadow-light: 1px 1px 1px 1px rgb(143, 139, 139);
+    
+        --container-bg-dark: rgb(77, 77, 77);
+        --body-bg-dark: rgb(165, 165, 165);
+        --element-bg-dark: rgb(255, 255, 255);
+        --add-item-bg-dark: rgb(88, 79, 168);
+        --logo-color-dark: rgb(255, 255, 255);
+        --element-shadow-dark: 1px 1px 1px 1px rgb(66, 65, 65);
+    }
 }
 
 body{
     margin: 0;
-    background-color: var(--body-bg-light);
     font-family: sans-serif;
 }
 #header{
@@ -49,60 +107,55 @@ body{
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 7vh;
-    color: var(--color-light);
 }
 #icon{
     width: 15vh;
     height: 15vh;
 }
 #container{
-    background-color: var(--container-bg-light);
     box-shadow: 1px 1px 1px 1px rgb(150, 148, 148);
-    max-width: 840px;
-    border-radius: 2vh;
+    max-width: 860px;
+    border-radius: 15px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 input{
     outline: none;
     cursor: pointer;
     border: 0;
 }
-#enter-new-item{
+#input-new-item{
     width: 95%;
     height: 5.5vh;
     font-size: 2vh;
     padding: 10px;
     border-radius: 12px;
-    box-shadow: 1px 1px 1px 1px rgb(128, 124, 124);
-    background-color: var(--element-bg-light);
+    border: 1px solid rgb(83, 82, 82);
     margin-bottom: 7px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 #add-new-item{
-    background-color: var(--add-item-bg-light);
-    box-shadow: 1px 1px 1px 1px rgb(46, 44, 121);
+    border: 1px solid rgb(83, 82, 82);
     color: aliceblue;
     font-weight: 500;
     font-size: 2.1vh;
     padding: 2vh;
-    border-radius: 1.8vh;
+    border-radius: 12px;
     margin-bottom: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-left: 2.5%; /* Hell yeah code */ 
+    margin-left: 1.5%; /* Hell yeah code */ 
 }
 .item{
-    background-color: var(--element-bg-light);
-    box-shadow: 1px 1px 1px 1px rgb(172, 171, 171);
+    border: 1px solid rgb(83, 82, 82);
     width: 95%;
     padding: 7px;
-    border-radius: 1.8vh;
+    border-radius: 12px;
     margin-bottom: 1.5vh;
     display: flex;
     margin-left: auto;
@@ -110,9 +163,10 @@ input{
 }
 .item-name{
     font-size: 2.2vh;
-    height: 3vh;
+    height: auto;
     margin-left: 1vh;
     text-align: left;
+    line-break: anywhere; /* That wasn't necessary before... */
     width: 95%;
     font-weight: 600;
 }
@@ -131,7 +185,7 @@ input{
     left: 0;
     margin: auto;
 }
-#enter-new-item:hover{
+#input-new-item:hover{
     transform: scale(1.02);
     transition: transform 0.2s;
 }
