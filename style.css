@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
     :root{
         --container-bg-light: rgba(255, 255, 255, 0);
         --container-bg-dark: rgba(255, 255, 255, 0);
@@ -58,7 +58,7 @@ body{
 #container{
     background-color: var(--container-bg-light);
     box-shadow: 1px 1px 1px 1px rgb(150, 148, 148);
-    max-width: 500px;
+    max-width: 840px;
     border-radius: 2vh;
     padding: 20px;
     margin-left: auto;
