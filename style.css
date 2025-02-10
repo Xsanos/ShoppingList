@@ -1,59 +1,34 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
     :root{
-        --container-width: 100vw;
-
         --container-bg-light: rgba(255, 255, 255, 0);
-        --body-bg-light: rgb(224, 214, 214);
-        --element-bg-light: rgb(255, 255, 255);
-        --add-item-bg-light: rgb(88, 79, 168);
-        --logo-color-light: rgb(0, 0, 0);
-        
         --container-bg-dark: rgba(255, 255, 255, 0);
-        --body-bg-dark: rgb(80, 76, 76);
-        --element-bg-dark: rgb(255, 255, 255);
-        --add-item-bg-dark: rgb(88, 79, 168);
-        --logo-color-dark: rgb(255, 255, 255);
+    }
+    #container{
+        margin: 0!important;
+        border: 0!important;
+        border-radius: 0!important;
+        box-shadow: none!important;
     }
     #add-new-item:hover, .item-delete:hover{
         transform: none!important;
     }
-    #container{
-        margin: 0px!important;
-        padding: 0px!important;
-        border: none!important;
-        box-shadow: none!important;
-        border-radius: 0px!important;
-    }
-    #enter-new-item{
-        width: 90%!important;
-    }
-    #add-new-item{
-        margin-left: 5%!important; /*A half of the available*/
-    }
-    .item{
-        width: 90%!important;
-    }
 }
-@media screen and (min-width:1201px) {
-    :root{
-        --container-width: 80vw;
 
-        --container-bg-light: rgb(214, 211, 211);
-        --body-bg-light: white;
-        --element-bg-light: white;
-        --add-item-bg-light: rgb(88, 79, 168);
-        --logo-color-light: rgb(0, 0, 0);
-
-        --container-bg-dark: rgb(77, 77, 77);
-        --body-bg-dark: rgb(165, 165, 165);
-        --element-bg-dark: white;
-        --add-item-bg-dark: rgb(88, 79, 168);
-        --logo-color-dark: rgb(255, 255, 255);
-    }
-}
 :root{
     font-size: 16px;
+    --container-bg-light: rgba(255, 255, 255, 0);
+    --body-bg-light: white;
+    --element-bg-light: white;
+    --add-item-bg-light: rgb(88, 79, 168);
+    --logo-color-light: rgb(0, 0, 0);
+
+    --container-bg-dark: rgb(77, 77, 77);
+    --body-bg-dark: rgb(165, 165, 165);
+    --element-bg-dark: white;
+    --add-item-bg-dark: rgb(88, 79, 168);
+    --logo-color-dark: rgb(255, 255, 255);
 }
+
 body{
     margin: 0;
     background-color: var(--body-bg-light);
@@ -83,8 +58,7 @@ body{
 #container{
     background-color: var(--container-bg-light);
     box-shadow: 1px 1px 1px 1px rgb(150, 148, 148);
-    width: var(--container-width);
-    height: auto;
+    max-width: 500px;
     border-radius: 2vh;
     padding: 20px;
     margin-left: auto;
@@ -101,7 +75,7 @@ input{
     height: 5.5vh;
     font-size: 2vh;
     padding: 10px;
-    border-radius: 1.8vh;
+    border-radius: 12px;
     box-shadow: 1px 1px 1px 1px rgb(128, 124, 124);
     background-color: var(--element-bg-light);
     margin-bottom: 7px;
